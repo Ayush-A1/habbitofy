@@ -33,6 +33,7 @@ module.exports = {
       'flip-select-arrow': 'flipSelectArrow 0.2s ease-out 0s 1 normal forwards',
       'flip-select-arrow-back': 'flipSelectArrowBack 0.2s ease-out 0s 1 normal forwards',
       'show-completion-menu': 'showCompletionMenu 0.3s ease-out 0s 1 normal forwards',
+      'animate-spin': 'spin 1s linear infinite'
     },
     extend: {
       keyframes: {
