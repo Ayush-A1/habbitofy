@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const GenralState = (props) => {
-  const backendHost = process.env.BACKEND_HOST || "http://localhost:3001";
+  const backendHost = "https://habbitofy-backend.onrender.com";
 
   const handleOnChange = (e, state, setState) => {
     setState({ ...state, [e.target.name]: e.target.value });
