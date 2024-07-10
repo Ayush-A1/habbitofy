@@ -88,15 +88,15 @@ function NavDrawer() {
         }
         color={isOpen ? "white" : "#3A4874"}
       />
-
-      {userData && (
-        <button
-          onClick={handleLogout}
-          className="hover:bg-[#4d703e] font-semibold px-2 py-1 z-[15] rounded-md transition-all hover:transition-all border-2 border-[#4d703e] cursor-pointer text-[#4d703e] hover:text-[#fff] uppercase absolute right-0 top-0 m-8 text-sm tracking-wide"
-        >
-          Signout
-        </button>
-      )}
+      {console.log(userData)}
+      <button
+        onClick={handleLogout}
+        className={`${
+          !userData?.email && "hidden"
+        } hover:bg-[#4d703e] font-semibold px-2 py-1 z-[15] rounded-md transition-all hover:transition-all border-2 border-[#4d703e] cursor-pointer text-[#4d703e] hover:text-[#fff] uppercase absolute right-0 top-0 m-8 text-sm tracking-wide`}
+      >
+        Signout
+      </button>
 
       <div className="fixed top-0 left-0 z-20 lg:relative">
         <div className={navDrawerClass}>

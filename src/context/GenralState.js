@@ -50,7 +50,7 @@ const GenralState = (props) => {
         console.error(error);
       }
     })();
-  }, [backendHost]);
+  }, [backendHost, navigate]);
 
   return (
     <GenralContext.Provider

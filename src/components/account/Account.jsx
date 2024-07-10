@@ -40,7 +40,6 @@ const Account = () => {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    console.log({ ...formData });
     try {
       setIsProcessing(true);
       if (formType === "LOGIN" || formType === "REGISTER") {
