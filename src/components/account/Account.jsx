@@ -31,7 +31,7 @@ const Account = () => {
           navigate("/auth/login");
         } else {
           console.error(error);
-          navigate("/auth/login")
+          navigate("/auth/login");
         }
       }
     })();
@@ -70,27 +70,8 @@ const Account = () => {
   };
 
   return (
-    <div className="min-h-min flex items-center justify-center bg-gray-100">
+    <div className="h-full flex items-center justify-center bg-gray-100 ">
       <div className="p-6 rounded shadow-md w-full max-w-sm backdrop-blur-md bg-[#ffffff40]">
-        {/* {renderForm()}
-        <div className="mt-6 flex justify-center font-semibold">
-          {formType !== "login" && (
-            <button onClick={() => setFormType("login")} className="mr-4">
-              Login
-            </button>
-          )}
-          {formType !== "signup" && (
-            <button onClick={() => setFormType("signup")} className="mr-4">
-              Sign Up
-            </button>
-          )}
-          {formType !== "forget" && (
-            <button onClick={() => setFormType("forget")}>
-              Forget Password
-            </button>
-          )}
-        </div> */}
-
         <form className="w-full" onSubmit={(e) => handleFormSubmit(e)}>
           {formType === "REGISTER" && (
             <div className="mb-4">
